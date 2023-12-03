@@ -5,7 +5,9 @@ Requirements:
 
 Terraform installed
 GCP trail account
+    create a project
     enable Compute Engine API
     create a service account for terraform
-    create a project
+        give the service account the Basic > Editor Role
+        create a key and download it into your working directory
     
