@@ -21,6 +21,12 @@ resource "google_storage_bucket" "spark_housing" {
   force_destroy = true
 }
 
+resource "google_storage_bucket_object" "source_data" {
+  name   = "source_housing_data"
+  source = "HouseListings-Top45Cities-10292023-kaggle.csv"
+  bucket = "spark_housing"
+}
+
 resource "google_service_account" "default" {
   account_id   = "service-account-id"
   display_name = "Service Account"
@@ -53,6 +59,9 @@ resource "google_dataproc_cluster" "mycluster" {
     # Override or set some custom properties
     software_config {
       image_version = "2.1-debian11"
+      optional_components = [
+	"JUPYTER"
+	]
     }
   }
 }
