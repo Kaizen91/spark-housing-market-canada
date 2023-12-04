@@ -63,3 +63,8 @@ resource "google_dataproc_cluster" "mycluster" {
     }
   }
 }
+
+resource "google_bigquery_dataset" "housing_datamart" {
+  dataset_id  = "housing_datamart"
+  description = "This dataset contains canadian housing data"
+}
