@@ -22,9 +22,10 @@ resource "google_storage_bucket" "spark_housing" {
 }
 
 resource "google_storage_bucket_object" "source_data" {
-  name   = "source_housing_data"
-  source = "HouseListings-Top45Cities-10292023-kaggle.csv"
-  bucket = "spark_housing"
+  name         = "LZ/source_housing_data.csv"
+  content_type = "csv"
+  source       = "HouseListings-Top45Cities-10292023-kaggle.csv"
+  bucket       = google_storage_bucket.spark_housing.id
 }
 
 resource "google_service_account" "default" {
@@ -48,8 +49,8 @@ resource "google_dataproc_cluster" "mycluster" {
     }
 
     worker_config {
-      num_instances    = 2
-      machine_type     = "e2-standard-2"
+      num_instances = 2
+      machine_type  = "e2-standard-2"
       disk_config {
         boot_disk_type    = "pd-standard"
         boot_disk_size_gb = 30
@@ -60,8 +61,8 @@ resource "google_dataproc_cluster" "mycluster" {
     software_config {
       image_version = "2.1-debian11"
       optional_components = [
-	"JUPYTER"
-	]
+        "JUPYTER"
+      ]
     }
   }
 }
