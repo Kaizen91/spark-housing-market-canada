@@ -12,10 +12,9 @@ The main.tf terraform file will create all the infrastructure needed for this pi
 
 ## Requirements:
 
-Terraform installed [link](https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/install-cli)
-GCP trial account [link](https://cloud.google.com/free)
+Terraform installed [link](https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/install-cli)  
+GCP trial account [link](https://cloud.google.com/free)  
 NOTE:  you need a credit card to create an account, but you will not be billed unless you opt in to upgrade your account.  The free account comes with $300 worth of credits as of the writing of this document.
-
 
 ## Preliminary set up:
 
