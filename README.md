@@ -14,11 +14,12 @@ create a project
 
 ![create a project](https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-create-new-project.png)
 
-    Enable the following APIs
-    * Compute Engine API
-    * Cloud Dataproc API
-    * Identity and Access Management (IAM) API
-    * Cloud Resource Manager API
+Enable the following APIs (search in the searchbar and then click the enable button)
+![example API enablement](https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-enable-api.png)
+* Compute Engine API
+* Cloud Dataproc API
+* Identity and Access Management (IAM) API
+* Cloud Resource Manager API
 
 create a service account for terraform
 
