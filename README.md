@@ -25,7 +25,7 @@ Preliminary set up:
 1. search "service accounts" in the search bar and open the first option.  You should see a screen that corresponds to the below screenshots
 2. click create service account
 
-![create service account]("images/GCP-create-service-account.png")
+![create service account]("/images/GCP-create-service-account.png")
 
 3. give the service account the Basic > Editor Role
 ![service account editor role]("images/GCP-service-account-editor.png")
