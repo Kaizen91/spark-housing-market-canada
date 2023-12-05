@@ -15,6 +15,54 @@ provider "google" {
   zone    = var.zone
 }
 
+resource "google_project_service" "iam_api" {
+  project = var.project
+  service = "iam.googleapis.com"
+
+  timeouts {
+    create = "30m"
+    update = "40m"
+  }
+
+  disable_dependent_services = true
+}
+
+resource "google_project_service" "dataproc_api" {
+  project = var.project
+  service = "dataproc.googleapis.com"
+
+  timeouts {
+    create = "30m"
+    update = "40m"
+  }
+
+  disable_dependent_services = true
+}
+
+resource "google_project_service" "compute_api" {
+  project = var.project
+  service = "compute.googleapis.com"
+
+  timeouts {
+    create = "30m"
+    update = "40m"
+  }
+
+  disable_dependent_services = true
+}
+
+resource "google_project_service" "cloudresourcemanager" {
+  project = var.project
+  service = "cloudresourcemanager.googleapis.com"
+
+  timeouts {
+    create = "30m"
+    update = "40m"
+  }
+
+  disable_dependent_services = true
+}
+
 resource "google_storage_bucket" "spark_housing" {
   name          = "spark_housing"
   location      = var.region
