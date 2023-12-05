@@ -45,10 +45,11 @@ NOTE:  you need a credit card to create an account, but you will not be billed u
 ## Steps to Run:
 
 1. Update the terraform.tfvars file with your gcp project id (you created above) and the key file you downloaded when you created your service account (again done above)
-2. Run terraform fmt to check for formating errors
-3. Run terraform validate to make sure the main.tf file is valid
-4. Run terraform apply to create the infrastructure and create the Dataproc job
-5. That's it!  if everything ran successfully you should have 5 tables created in BigQuery.  Each table has transformed the source data in a different way based on the transform.py script.
+2. Run `terraform init` to initialize terraform
+3. Run `terraform fmt` to check for formating errors
+4. Run `terraform validate` to make sure the main.tf file is valid
+5. Run `terraform apply` to create the infrastructure and create the Dataproc job
+6. That's it!  if everything ran successfully you should have 5 tables created in BigQuery.  Each table has transformed the source data in a different way based on the transform.py script.
 
 ## Shutdown:
 
