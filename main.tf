@@ -28,6 +28,12 @@ resource "google_storage_bucket_object" "source_data" {
   bucket       = google_storage_bucket.spark_housing.id
 }
 
+resource "google_storage_bucket_object" "transformation_script" {
+  name   = "scripts/transform.py"
+  source = "transform.py"
+  bucket = google_storage_bucket.spark_housing.id
+}
+
 resource "google_service_account" "default" {
   account_id   = "service-account-id"
   display_name = "Service Account"
@@ -67,4 +73,20 @@ resource "google_dataproc_cluster" "mycluster" {
 resource "google_bigquery_dataset" "housing_datamart" {
   dataset_id  = "housing_datamart"
   description = "This dataset contains canadian housing data"
+}
+
+# Submit an example pyspark job to a dataproc cluster
+resource "google_dataproc_job" "pyspark" {
+  region       = google_dataproc_cluster.mycluster.region
+  force_delete = true
+  placement {
+    cluster_name = google_dataproc_cluster.mycluster.name
+  }
+
+  pyspark_config {
+    main_python_file_uri = format("gs://%s/%s", google_storage_bucket.spark_housing.name, google_storage_bucket_object.transformation_script.name)
+    properties = {
+      "spark.logConf" = "true"
+    }
+  }
 }
