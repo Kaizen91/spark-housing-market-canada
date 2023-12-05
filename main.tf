@@ -73,6 +73,7 @@ resource "google_dataproc_cluster" "mycluster" {
 resource "google_bigquery_dataset" "housing_datamart" {
   dataset_id  = "housing_datamart"
   description = "This dataset contains canadian housing data"
+  delete_contents_on_destroy = true
 }
 
 # Submit an example pyspark job to a dataproc cluster

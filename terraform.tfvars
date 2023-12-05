@@ -1,2 +1,2 @@
-project          = "macro-parity-407214"
-credentials_file = "macro-parity-407214-034d16cae3d2.json"
+project          = "spark-etl-407013"
+credentials_file = "spark-etl-407013-51689486cb68.json"
