@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "macro-parity-407214",
+  "private_key_id": "034d16cae3d22ac0c8f313ab7d2920115cefbfc5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCaNXLn/i0su/oP\n5wggAbBS2ycfTGFnmx+hPJ4nzwSvtC0+cct3WkDpbg0LCOZow4S12F000xID66Fc\nnP4ig2vyiSvy8zxn0scdVubuo10dD5H4AgzQtk5iswh9ha9lKUUE3OWQjGzgJtxN\n5ruLYakuSXZdH4fuxe37mLpWIgrmEChBcukRwOoAEe6S7SDXCmdjEplAMvCQzeCN\nO5EtRi+tFPwxpD86JLns0pCOnSKtXBCb6+pGdHlRd3ltk77PB3TGpQA61wwzMGic\nCzxJm0SbKfxu6pOtfYUWP+jCAVqXLU/b10CGaWDs4ZxdICn+foL5MBn1CF32d8fn\ncl12PPTVAgMBAAECggEAMjyTUGyHfvlF/4Q+K18hd/yZBCM34C6y4S4EP+e7GRpT\nWvJrXFh0qRcG/L9LgHmhdDQmOR1B0zEiAi/KwqeZtQtm2+DNnu0VnMNAvCFQJjV6\nUhco4Z1ib9jvPSUd/JCzQWBNEQgON/+w6VfvZPrNyJx6COBKwkiMvNgGbCTu8/9x\n/ClENybK8bDSOOsroxQBXC1DkPw+9Vq0DIWIWyx+fpkKM61Uck9hdvI0cmK/6SFq\nfGIwrGwzbCXehdmJNoQlFS0bdCuUtxi3XJ1dwPjqweKE/BN9c0vljSXpinPrU87G\nPkeY6w4VjbHmsFftbq8FlGTmCrAYdTjQhKGKIotyyQKBgQDMTz/grbppl6JnnTJi\nvYDnWxdsvdsLRdlISvNYHFcLMmjVlpKpUk8rTj2XeRtu1tdVWBbjaBF6tWCuIPhC\nJ9KH37ULWNhZyGxEcPcbDT9t5s8GlZILm6GROfGr40F0wMlka+nIyFolnqf8PRQx\ndS+HCwP4Ct8L7HKUqY2LtD075wKBgQDBOUPKibxf1em2eEpugMG7HmuNmzbTgOSz\nzHeZcDm6a8L+z+3T+TLe8+lGP6a//3ZrVntAlZGwHWeOFBUz/UJcFl637ltZlRNx\nG7KqYWz9EJ6ybjdATvKCP7C+mriiVV6w7yyScyFIQhK5KJ/p+O+VXpdAZlvV0wo9\nRchwuoWR4wKBgDi3U0M61wHTD0l2MPOKKcuP1Pvh5HnHpR7Vd6IhE+TO1J1eVE5e\nxA2AhcaT3xKw30wYzRnJ3PhUe4c7Lc+noGEJsAd7XWvnIG8LcP14ewA2T4hDYyyH\nwp0/GaCe0J/pmL6g2mBbhfLljTqPdhiYsF3rp+lmky6LL++m9d0vZsRHAoGBAIk8\n9x1f/t/Cu6DSh2s9IFybGqEVYTeQEOBzlW7x+s6hw3ngjXdFRBB/BWzTwMgV1jIe\n1qPkl/mSqP6M3RJ0CzIE4XmaXl+eNpTbq2bAk/yaVV0+Uxfl+vDv88Utd341THA3\nMF1EUJtV8p54cDxqhyB8cslW6ltQ7bDfY6JNmJkpAoGALUf8rFFLfmux4gQB/3wY\nHRY3wuXmcN7udB0WPDqnuK3JGmhgdkH7tHD2g7FjtCi2hV7BnkKgFWoksQybI9w4\nBfTnUkpzgHoW9rElPHOBa7uDP5+KODzZfgm0I867/Bgdf22EOUlPPtKcR8N2Naa9\n44KojsrHIkk8gkR46kSszJI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "terraform@macro-parity-407214.iam.gserviceaccount.com",
+  "client_id": "105761758723164913434",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/terraform%40macro-parity-407214.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
