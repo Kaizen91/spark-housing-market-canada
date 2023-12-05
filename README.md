@@ -3,24 +3,33 @@ An ETL project using canadian housing data to demonstrate knowledge of Spark, Te
 
 Requirements:
 
-Terraform installed [link]
-GCP trial account [link]
+Terraform installed [link](https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/install-cli)
+GCP trial account [link](https://cloud.google.com/free)
 NOTE:  you need a credit card to create an account, but you will not be billed unless you opt in to upgrade your account.  The free account comes with $300 worth of credits as of the writing of this document
 
 
 Preliminary set up:
     create a project
-    [image]
-    enable Compute Engine API
-    enable Cloud Dataproc API
-    enable Identity and Access Management (IAM) API
-    enable Cloud Resource Manager API
+
+    !create a project("images/GCP-create-new-project.png")
+
+    Enable the following APIs
+    * Compute Engine API
+    * Cloud Dataproc API
+    * Identity and Access Management (IAM) API
+    * Cloud Resource Manager API
+
     create a service account for terraform
-        1. search "service accounts" in the search bar and open this link
-        2. click create service account
-        3. give the service account the Basic > Editor Role
-        4. create a key and download it into the working directory of this project.  Your setup should look something like this: [image]
-    
+
+1. search "service accounts" in the search bar and open the first option.  You should see a screen that corresponds to the below screenshots
+2. click create service account
+
+!create service account("images/GCP-create-service-account.png")
+
+3. give the service account the Basic > Editor Role
+!service account editor role("images/GCP-service-account-editor.png")
+4. create a key and download it into the working directory of this project.  Your setup should look something like this: [image]
+!create service account key("images/GCP-service-account-key.png")
 
 Steps to Run:
 
