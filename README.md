@@ -1,11 +1,20 @@
 # spark-housing-market-canada
-An ETL project using canadian housing data to demonstrate knowledge of Spark, Terraform, and GCP (Dataproc, Cloud Storage, BigQuery)
+
+An ETL project using canadian housing data to demonstrate knowledge of Spark, Terraform, and GCP (Dataproc, Cloud Storage, BigQuery).
+
+Data was sourced from the following kaggle dataset: [link](https://www.kaggle.com/datasets/reenapinto/housing-price-and-real-estate-2023)
+
+## Data Flow
+
+The main.tf terraform file will create all the infrastructure needed for this pipeline:  a Google Cloud Storage bucket, a Dataproc cluster, a Dataproc job, and a BigQuery dataset.  It will also upload the source csv file and the transform.py script to the Google Cloud Storage bucket, so that they can be accessed by the Dataproc Pyspark Job running on the Dataproc cluster.
+
+![data flow diagram](https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/Dataflow.png)
 
 ## Requirements:
 
 Terraform installed [link](https://developer.hashicorp.com/terraform/tutorials/gcp-get-started/install-cli)
 GCP trial account [link](https://cloud.google.com/free)
-NOTE:  you need a credit card to create an account, but you will not be billed unless you opt in to upgrade your account.  The free account comes with $300 worth of credits as of the writing of this document
+NOTE:  you need a credit card to create an account, but you will not be billed unless you opt in to upgrade your account.  The free account comes with $300 worth of credits as of the writing of this document.
 
 
 ## Preliminary set up:
