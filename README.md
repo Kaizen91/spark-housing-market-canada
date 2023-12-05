@@ -9,6 +9,7 @@ NOTE:  you need a credit card to create an account, but you will not be billed u
 
 
 Preliminary set up:
+
     create a project
 
     !create a project("images/GCP-create-new-project.png")
@@ -24,12 +25,12 @@ Preliminary set up:
 1. search "service accounts" in the search bar and open the first option.  You should see a screen that corresponds to the below screenshots
 2. click create service account
 
-!create service account("images/GCP-create-service-account.png")
+![create service account]("images/GCP-create-service-account.png")
 
 3. give the service account the Basic > Editor Role
-!service account editor role("images/GCP-service-account-editor.png")
+![service account editor role]("images/GCP-service-account-editor.png")
 4. create a key and download it into the working directory of this project.  Your setup should look something like this: [image]
-!create service account key("images/GCP-service-account-key.png")
+![create service account key]("images/GCP-service-account-key.png")
 
 Steps to Run:
 
