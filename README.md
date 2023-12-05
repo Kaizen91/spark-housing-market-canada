@@ -12,7 +12,7 @@ Preliminary set up:
 
     create a project
 
-![create a project]("https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-create-new-project.png")
+![create a project](https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-create-new-project.png)
 
     Enable the following APIs
     * Compute Engine API
@@ -25,12 +25,12 @@ Preliminary set up:
 1. search "service accounts" in the search bar and open the first option.  You should see a screen that corresponds to the below screenshots
 2. click create service account
 
-![create service account]("https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-create-service-account.png")
+![create service account](https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-create-service-account.png)
 
 3. give the service account the Basic > Editor Role
-![service account editor role]("https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-service-account-editor.png")
+![service account editor role](https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-service-account-editor.png)
 4. create a key and download it into the working directory of this project.
-![create service account key]("https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-service-account-key.png")
+![create service account key](https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-service-account-key.png)
 
 Steps to Run:
 
