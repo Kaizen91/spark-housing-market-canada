@@ -10,18 +10,18 @@ NOTE:  you need a credit card to create an account, but you will not be billed u
 
 ## Preliminary set up:
 
-create a project
+### create a project
 
 ![create a project](https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-create-new-project.png)
 
-Enable the following APIs (search in the searchbar and then click the enable button)
+### Enable the following APIs (search in the searchbar and then click the enable button)
 ![example API enablement](https://github.com/Kaizen91/spark-housing-market-canada/blob/main/images/GCP-enable-api.png)
 * Compute Engine API
 * Cloud Dataproc API
 * Identity and Access Management (IAM) API
 * Cloud Resource Manager API
 
-create a service account for terraform
+### create a service account for terraform
 
 1. search "service accounts" in the search bar and open the first option.  You should see a screen that corresponds to the below screenshots
 2. click create service account
